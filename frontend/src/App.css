@@ -60,5 +60,27 @@ body {
 }
 
 .logofooter {
-  opacity: 70% !important;
+  opacity: 45% !important;
+  padding: 0.5rem !important;
+}
+
+.navfooter {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 0.5rem;
+  margin-left:20rem;
+}
+
+.instagramfooter, .facebookfooter, .youtubefooter {
+      padding: 3px;
+      width: 2.5rem;
+      height: 2rem;
+}
+
+.divfooter {
+  margin-right: 10rem;
+}
+
+.float-end  a {
+  color: black !important;
 }

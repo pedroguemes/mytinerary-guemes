@@ -1,76 +1,78 @@
 import React from "react";
-import {Carousel} from 'react-bootstrap';
+import {Carousel, Card, Row, Col} from 'react-bootstrap';
 import  newyork from '../assets/newyork.jfif'
-import  macau from '../assets/macau.jpg'
-import  paris from '../assets/paris.jfif'
-import  dubai from '../assets/dubai.jfif'
-import  valijaciudad from '../assets/valijaciudad.jpg'
+// import  macau from '../assets/macau.jpg'
+// import  paris from '../assets/paris.jfif'
+// import  dubai from '../assets/dubai.jfif'
+// import  valijaciudad from '../assets/valijaciudad.jpg'
 
 
 
-export default function (){
+
+let arrayCiudades =[
+    {nombreCiudad:"Buenos Aires", pais:"Argentina", imagenCiudad:{}},
+    {nombreCiudad:"Berlin", pais:"Germany", imagenCiudad:{}},
+    {nombreCiudad:"New York", pais:"United States", imagenCiudad:{newyork}}
+]
+
+
+export default function Carrousel () {
     return (
-        <div className="carrousel">
                 <Carousel fade>
                     <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={newyork}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>New Yourk, United States.</h3>
-                        {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-                        </Carousel.Caption>
+                          <Row xs={1} md={2} className="g-4">
+                                {arrayCiudades.map((_, idx) => (
+                                    <Col>
+                                    <Card>
+                                        <Card.Img variant="top" src={arrayCiudades.imagenCiudad} />
+                                        <Card.Body>
+                                        <Card.Title>{arrayCiudades.nombreCiudad}</Card.Title>
+                                        <Card.Title>{arrayCiudades.pais}</Card.Title>
+                                        <Card.Text>
+                                         
+                                        </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                    </Col>
+                                ))}
+                         </Row>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={macau}
-                        alt="First slide"
-                        />
-                        <Carousel.Caption>
-                        <h3>Macau, China.</h3>
-                        {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-                        </Carousel.Caption>
+                          <Row xs={1} md={2} className="g-4">
+                                {arrayCiudades.map((_, idx) => (
+                                    <Col>
+                                    <Card>
+                                        <Card.Img variant="top" src={arrayCiudades.imagenCiudad} />
+                                        <Card.Body>
+                                        <Card.Title>{arrayCiudades.nombreCiudad}</Card.Title>
+                                        <Card.Title>{arrayCiudades.pais}</Card.Title>
+                                        <Card.Text>
+                                         
+                                        </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                    </Col>
+                                ))}
+                         </Row>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={paris}
-                        alt="Second slide"
-                        />
-
-                        <Carousel.Caption>
-                        <h3>Paris, France.</h3>
-                        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={dubai}
-                        alt="Second slide"
-                        />
-
-                        <Carousel.Caption>
-                        <h3>Dubai, United Arab Emirates.</h3>
-                        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={valijaciudad}
-                        alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                        <h3>And much more!</h3>
-                        {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
-                        </Carousel.Caption>
+                          <Row xs={1} md={2} className="g-4">
+                                {arrayCiudades.map((_, idx) => (
+                                    <Col>
+                                    <Card>
+                                        <Card.Img variant="top" src={arrayCiudades.imagenCiudad} />
+                                        <Card.Body>
+                                        <Card.Title>{arrayCiudades.nombreCiudad}</Card.Title>
+                                        <Card.Title>{arrayCiudades.pais}</Card.Title>
+                                        <Card.Text>
+                                         
+                                        </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                    </Col>
+                                ))}
+                         </Row>
                     </Carousel.Item>
             </Carousel>
-        </div>
     )
 }
