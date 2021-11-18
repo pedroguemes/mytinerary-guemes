@@ -1,14 +1,56 @@
-.bg-myBlue {
-    background-color: rgb(10, 9, 90);
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.content {
+.bg-myBlue {
+    /* background-color: rgb(10, 9, 90); */
+    background-image: url("./assets/skyline2.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
+     /* filter: opacity(10%); */
+    /* filter: brightness(0%); */
+
+}
+
+.bg-myFooter {
+    background-color: rgba(167, 86, 11, 0.473);
+    background-image: url("./assets/skyline.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 15%;
+     /* filter: opacity(10%); */
+    /* filter: brightness(0%); */
+
+}
+
+body {
+  background-color: rgba(230, 175, 114, 0.466);
+}
+
+
+/* .content {
   padding: 12px;
   height: 3000px;
-}
+} */
 
 .logoperson {
   height: 2rem;
   /* vertical-align: middle; */
   width: 2.5rem;
+}
+
+.herowelcome {
+  background-image: url("./assets/avionnubes.jfif") !important;
+  background-position: center !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrousel {
+  margin: 2rem !important;
 }

@@ -34,17 +34,17 @@ const logopersona =<BsPersonCircle className="logoperson"/>;
 export default function Navheader(){
     return (
         <div>
-        <Navbar bg="myBlue" variant="dark" sticky="top" expand="sm" collapseOnSelect>
+        <Navbar bg="myBlue" variant="light" sticky="top" expand="sm" collapseOnSelect>
               <Navbar.Brand>
-                  <img height="155" width="170" src={logosecundario}/>{' '}
+                  <img height="170" width="190" src={logosecundario}/>{' '}
                   Mytinerary
               </Navbar.Brand>
               <Navbar.Toggle />
               <Navbar.Collapse>
               <Nav>
                   <Nav.Link href="#home">Home</Nav.Link>
-                  {/* <Nav.Link href="#about-us">About Us</Nav.Link> */}
-                  <NavDropdown title="Cities">
+                  <Nav.Link href="#cities">Cities</Nav.Link>
+                  {/* <NavDropdown title="Cities">
                     <NavDropdown.Item href="#products/buenosaires">All Cities</NavDropdown.Item>
                     <NavDropdown.Divider/>
                     <NavDropdown.Item href="#products/buenosaires">Buenos Aires</NavDropdown.Item>
@@ -52,8 +52,8 @@ export default function Navheader(){
                     <NavDropdown.Item href="#products/melbourne">Melbourne</NavDropdown.Item>
                     <NavDropdown.Item href="#products/barcelona">Barcelona</NavDropdown.Item>
                     <NavDropdown.Item href="#products/london">London</NavDropdown.Item>
-                  </NavDropdown>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                  </NavDropdown> */}
+                  {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
                   {/* <BsPersonCircle className="logoperson"/> */}
                   <NavDropdown title={logopersona}>
                     <NavDropdown.Item href="#products/login">Log-In</NavDropdown.Item>

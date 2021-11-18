@@ -1,7 +1,5 @@
 import './App.css';
-// import 'bootstrap/dist/css/bootstrap.css'
-// import logosecundario from './assets/logosecundario.png'
-// import {Nav, Navbar, NavDropdown} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
 import Home from './pags/Home.js'
 
 function App() {
