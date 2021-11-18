@@ -1,8 +1,9 @@
 import React from "react";
 import {Carousel, Card, Row, Col} from 'react-bootstrap';
 import  newyork from '../assets/newyork.jfif'
+import  kualalumpur from '../assets/kualalumpur.jfif'
+import  paris from '../assets/paris.jfif'
 // import  macau from '../assets/macau.jpg'
-// import  paris from '../assets/paris.jfif'
 // import  dubai from '../assets/dubai.jfif'
 // import  valijaciudad from '../assets/valijaciudad.jpg'
 
@@ -10,14 +11,15 @@ import  newyork from '../assets/newyork.jfif'
 
 
 let arrayCiudades =[
-    {nombreCiudad:"Buenos Aires", pais:"Argentina", imagenCiudad:{}},
-    {nombreCiudad:"Berlin", pais:"Germany", imagenCiudad:{}},
+    {nombreCiudad:"Kuala Lumpur", pais:"Malaysia", imagenCiudad:{kualalumpur}},
+    {nombreCiudad:"Paris", pais:"France", imagenCiudad:{paris}},
     {nombreCiudad:"New York", pais:"United States", imagenCiudad:{newyork}}
 ]
 
 
-export default function Carrousel () {
+export default function Divcarousel () {
     return (
+            <div>
                 <Carousel fade>
                     <Carousel.Item>
                           <Row xs={1} md={2} className="g-4">
@@ -74,5 +76,6 @@ export default function Carrousel () {
                          </Row>
                     </Carousel.Item>
             </Carousel>
+        </div>
     )
 }
