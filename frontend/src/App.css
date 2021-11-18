@@ -42,6 +42,10 @@ body {
   width: 2.5rem;
 }
 
+.logopersona {
+  align-self: flex-end !important;
+}
+
 .herowelcome {
   background-image: url("./assets/avionnubes.jfif") !important;
   background-position: center !important;
@@ -52,5 +56,9 @@ body {
 }
 
 .carrousel {
-  margin: 2rem !important;
+  margin: 1.5rem !important;
+}
+
+.logofooter {
+  opacity: 70% !important;
 }

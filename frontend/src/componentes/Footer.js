@@ -14,14 +14,13 @@ export default function Footer(){
               <Navbar.Toggle />
               <Navbar.Collapse>
               <Navbar.Brand>
-                  <img height="150" width="170" src={logosecundario}/>{' '}
+                  <img height="150" width="170" className="logofooter" src={logosecundario}/>{' '}
                   Mytinerary
               </Navbar.Brand>
               <Nav>
                   <Nav.Link href="#home">Home</Nav.Link>
                   <Nav.Link href="#cities">Cities</Nav.Link>
                   <Nav.Link href="#contact">Contact</Nav.Link>
-                  {/* <BsPersonCircle className="logoperson"/> */}
               </Nav>
               </Navbar.Collapse>
           </Navbar>

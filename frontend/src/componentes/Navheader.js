@@ -36,7 +36,7 @@ export default function Navheader(){
         <div>
         <Navbar bg="myBlue" variant="light" sticky="top" expand="sm" collapseOnSelect>
               <Navbar.Brand>
-                  <img height="170" width="190" src={logosecundario}/>{' '}
+                  <img height="180" width="210" src={logosecundario}/>{' '}
                   Mytinerary
               </Navbar.Brand>
               <Navbar.Toggle />
@@ -55,10 +55,12 @@ export default function Navheader(){
                   </NavDropdown> */}
                   {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
                   {/* <BsPersonCircle className="logoperson"/> */}
-                  <NavDropdown title={logopersona}>
-                    <NavDropdown.Item href="#products/login">Log-In</NavDropdown.Item>
-                    <NavDropdown.Item href="#products/signup">Sign-up</NavDropdown.Item>
-                  </NavDropdown>
+                  <div>
+                    <NavDropdown className="logopersona" title={logopersona}>
+                      <NavDropdown.Item href="#products/login">Log-In</NavDropdown.Item>
+                      <NavDropdown.Item href="#products/signup">Sign-up</NavDropdown.Item>
+                    </NavDropdown>
+                  </div>
               </Nav>
               </Navbar.Collapse>
           </Navbar>
